@@ -134,7 +134,7 @@ Transforms a dense research paper into a lively, conversational audio podcast.
 ## 🔒 Exclusive Access & Proprietary Rights
 
 > [!IMPORTANT]
-> **SPAS (Scientific Papers Agents Suite)** is a private, proprietary software suite and the exclusive intellectual property of **Mohammed Karim Al-Zoubi** and **Osama Shaqqi**.
+> **SPAS (Scientific Papers Agents Suite)** is a private, proprietary software suite and the exclusive intellectual property of **Mohammad Karim Alzoubi** and **Osama Shakaki**.
 
 This repository is a dedicated submission for the **Agenticthon Hackathon**. Access is strictly limited to authorized judges and evaluators. 
 

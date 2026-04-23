@@ -101,8 +101,7 @@ Our Video Agent orchestrates a complex internal economy of specialist sub-agents
     <tr>
       <td align="center" style="border: 2px solid #58a6ff; border-radius: 10px; padding: 10px; background-color: #0d1117;">
         <!-- استبدل الرابط أدناه بالرابط الذي ظهر لك عند سحب الفيديو -->
-        <video src="[ضع_الرابط_الذي_نسخته_هنا](https://github.com/user-attachments/assets/42593889-a2a3-4dad-bff2-50089df2bacc
-)" width="100%" controls autoplay loop muted style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.5);"></video>
+        <video src="https://github.com/user-attachments/assets/42593889-a2a3-4dad-bff2-50089df2bacc" width="100%" controls autoplay loop muted style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.5);"></video>
         <p style="margin-top: 10px; font-size: 14px; color: #8b949e;">
           <em><b>Case Study:</b> "A Fast Algorithm for Particle Simulations" <br> 
           Notice the autonomous coordination between narration and mathematical Manim animations.</em>

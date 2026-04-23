@@ -11,15 +11,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ========= Copyright 2023-2024 @ CAMEL-AI.org. All Rights Reserved. =========
+"""Get classes from Outschool API."""
 
-from camel.logger import disable_logging, enable_logging, set_log_level
+from typing import Any, Dict
 
-__version__ = '0.2.19'
+import requests
 
-__all__ = [
-    '__version__',
-    'camel',
-    'disable_logging',
-    'enable_logging',
-    'set_log_level',
-]
+
+def call_api(input_json: Dict[str, Any]) -> Dict[str, Any]:
+    response = requests.get(
+        "https://chatgpt-plugin.outschool.com/api/classes", params=input_json
+    )
+
+    if response.status_code == 200:
+        return response.json()
+    else:
+        return {"status_code": response.status_code, "text": response.text}

@@ -11,15 +11,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ========= Copyright 2023-2024 @ CAMEL-AI.org. All Rights Reserved. =========
+from camel.types import OpenAPIName
 
-from camel.logger import disable_logging, enable_logging, set_log_level
-
-__version__ = '0.2.19'
-
-__all__ = [
-    '__version__',
-    'camel',
-    'disable_logging',
-    'enable_logging',
-    'set_log_level',
-]
+openapi_security_config = {
+    OpenAPIName.NASA_APOD.value: {
+        "api_key": "NASA_API_KEY",
+        "get_api_key_url": "https://api.nasa.gov/",
+    },
+}

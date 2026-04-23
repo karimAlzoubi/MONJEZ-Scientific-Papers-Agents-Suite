@@ -12,38 +12,51 @@ by **Mohammed Karim Al-Zoubi** & **Osama Shaqqi**
 ---
 
 ## 🎯 Our Mission
-Scientific breakthroughs are often trapped within the dense, static confines of academic papers. **SPAS** is an autonomous, multi-agent ecosystem designed to transform any scientific paper into a complete suite of communication assets. With a single command, SPAS converts static text into five dynamic, ready-to-use formats: Code, Posters, Presentations, Videos, and Podcasts.
+Scientific breakthroughs are often trapped within the dense, static confines of academic papers. The process of communicating research—translating complex ideas into code, posters, presentations, videos, and discussions—is a manual, time-consuming effort.
+
+**SPAS is our answer.** It is an autonomous, multi-agent ecosystem that orchestrates a team of specialized AI agents to transform any scientific paper into a complete suite of communication assets. With a single command, SPAS converts static text into five dynamic formats:
+
+| 💻 **Code** | 🖼️ **Posters** | 📊 **Slides** | 🎥 **Videos** | 🎙️ **Podcasts** |
+|:---:|:---:|:---:|:---:|:---:|
+| Executable Repositories | Professional & Visual | Polished Presentations | Engaging Video Abstracts | Conversational Audio |
 
 ---
 
 ## ✨ Meet the Agentic Suite
+SPAS is composed of five expert agents, each a master of its domain, working in a sophisticated pipeline where precision meets creativity.
+
+---
 
 ### 💻 The Code Agent: *From Theory to Executable Reality*
-This agent reads the methodology and mathematical logic from a paper and autonomously writes a clean, modular, and fully functional code repository to reproduce the results.
+This agent reads the methodology and mathematical logic from a paper and autonomously writes a clean, modular, and functional code repository.
 
-<img src="assets/code_agent_workflow.png" alt="Code Agent Workflow" width="100%">
+<p align="center">
+  <img src="assets/code_agent_workflow.png" alt="Code Agent Workflow" width="100%">
+</p>
 
 **Internal Workflow:**
-- **Planning Agent:** Designs the file structure and dependencies.
-- **Analysis Agent:** Meticulously interprets equations and algorithms.
-- **Coding & Debugging Agents:** Writes, tests, and autonomously debugs the Python code.
+- **Planning Agent:** Acts as the System Architect, designing the file structure and dependencies.
+- **Analysis Agent:** Functions as a Research Scientist, meticulously interpreting equations.
+- **Coding & Debugging Agents:** Senior Engineers that write and autonomously fix Python code.
 
 ---
 
 ### 🖼️ The Poster Agent: *From Paper to Pixel-Perfect Poster*
 Condenses lengthy papers into visually stunning academic posters, ready for any conference.
 
-<img src="assets/poster_agent_teaser.jpeg" alt="Poster Agent Workflow" width="100%">
+<p align="center">
+  <img src="assets/poster_agent_teaser.jpeg" alt="Poster Agent Workflow" width="100%">
+</p>
 
 **Internal Workflow:**
-- **Parser Agent:** Distills text and visual assets (figures, tables).
+- **Parser Agent:** Distills text and visual assets (figures, tables) into a structured library.
 - **Planner Agent:** Uses a binary-tree algorithm to partition the canvas for a balanced flow.
-- **Painter & Critic Loop:** Generates rendering code and uses a VLM to fix text overflows and alignment issues.
+- **Painter & Critic Loop:** A VLM-powered loop that renders content and self-corrects layout issues.
 
 ---
 
 ### 📊 The Slides Agent: *From Data to Dazzling Slides*
-Transforms documents into polished presentations, ensuring every key insight is captured through its RAG-powered core.
+Transforms documents into polished presentations, ensuring every key insight is captured via its RAG-powered core.
 
 **Click on a preview to view the full PDF presentation:**
 
@@ -57,37 +70,54 @@ Transforms documents into polished presentations, ensuring every key insight is 
 </div>
 
 **Internal Workflow:**
-- **RAG Engine:** Indexes the paper to prevent hallucinations and ensure no figure is missed.
-- **Planning Agent:** Creates a blueprint mapping the narrative to a sequence of slides.
+- **RAG Engine:** Indexes the paper to build a searchable knowledge base, preventing hallucinations.
+- **Planning Agent:** Creates a blueprint mapping the narrative to a logical sequence of slides.
 - **Creation Agent:** Renders final visuals with high-quality styling.
 
 ---
 
 ### 🎥 The Video Agent: *From Manuscript to Motion*
-Produces dynamic video abstracts by translating academic concepts into animations and talking-head segments.
+Produces dynamic video abstracts by translating academic concepts into animations, talking-head segments, and visually narrated slides.
 
-**Internal Workflow:**
-- **Storyboard Agent (P-CoT):** Plans the video scene-by-scene with precise time allocation.
-- **Multimodal Generator:** Autonomously executes `Manim` for math and `PyMOL` for molecular animations.
-- **Self-Correction Loop:** Visually reviews frames to ensure absolute academic accuracy.
+#### 🧠 Strategic Workflow
+Our Video Agent orchestrates a complex internal economy of specialist sub-agents to ensure high-fidelity results.
+
+<p align="center">
+  <img src="assets/video_agent_planning_logic.png" alt="Video Planning Logic" width="90%">
+  <br>
+  <em><b>Fig 1. Strategic Blueprinting:</b> The agent employs a Progressive Chain-of-Thought (P-CoT) to decompose theoretical text into granular scene instructions.</em>
+</p>
+
+<p align="center">
+  <img src="assets/video_agent_orchestration.png" alt="Video Orchestration" width="90%">
+  <br>
+  <em><b>Fig 2. The Multimodal Assembly Line:</b> A closed-loop system where generators execute rendering code and visual critics provide real-time feedback.</em>
+</p>
+
+#### 📺 Live Demo: Autonomous Video Abstract
+Below is a raw output generated by the agent for the paper *"A Fast Algorithm for Particle Simulations"*.
+
+<p align="center">
+  <video src="assets/video_agent_demo_particle.mp4" width="100%" controls></video>
+</p>
 
 ---
 
 ### 🎙️ The Podcast Agent: *From Text to Talk Show*
-Converts academic jargon into a natural, two-host dialogue script and synthesizes it into a broadcast-ready podcast.
+Transforms a dense research paper into a lively, conversational audio podcast.
 
 **Internal Workflow:**
-- **Scriptwriting Agent:** Acts as a producer, assigning roles to a host and an expert guest.
-- **Audio Synthesis Engine:** Uses multi-voice TTS for distinct, natural-sounding voices.
-- **Transcript Generator:** Delivers a full text transcript alongside the `.mp3` output.
+- **Scriptwriting Agent:** Converts jargon into a natural, two-host dialogue script.
+- **Audio Synthesis Engine:** Uses multi-voice TTS to generate distinct, natural voices.
+- **Transcript Generator:** Provides a full text transcript alongside the `.mp3` output.
 
 ---
 
 ## 🧠 The Agentic Brain: Core Principles
-1.  **Hierarchical Task Decomposition:** Complex goals are broken down into executable specialist tasks.
-2.  **Autonomous Self-Correction:** "Critic" agents enable the system to debug and refine its own outputs.
-3.  **Domain-Specific Expertise:** Specialization in architecture, graphic design, and video production.
-4.  **Headless & Modular:** Designed for CLI execution and integration into automated workflows.
+1.  **Hierarchical Task Decomposition:** High-level goals are broken down into granular executable tasks.
+2.  **Autonomous Self-Correction:** "Critic" agents evaluate outputs and provide iterative feedback.
+3.  **Domain-Specific Expertise:** Specialists for `Manim` animations, `PyMOL` structures, and `pptx` rendering.
+4.  **Headless & Modular:** Designed to run autonomously via CLI for massive research workflows.
 
 ---
 
@@ -99,11 +129,27 @@ git clone https://github.com/YOUR-USERNAME/SPAS.git
 cd SPAS
 ```
 
-### 2. Quick Start Example: Generate a Poster
+### 2. Configure API Keys
+Configure your API keys (OpenAI, Gemini, etc.) in the `config.yml` or `.env` files within each agent's directory.
+
+### 3. Run an Agent (Example: Video Agent)
 ```bash
-cd Poster_Agent
-python -m new_pipeline --poster_path "paper.pdf" --model_name_t "4o" --model_name_v "4o"
+cd Video_Agent
+python run_agent.py --input "paper.pdf"
 ```
+
+---
+
+## 💡 Our Vision for Agenticthon
+SPAS is a statement about the future of agentic AI. We believe autonomous agents should **amplify human creativity**. By automating the friction-filled process of research communication, we empower thinkers to focus on their next big discovery.
+
+---
+
+## 🛠️ Built With
+- **Core:** Python 3.10+
+- **LLMs:** GPT-4o, Gemini 2.0, Llama 3.3
+- **Visualization:** Manim, PyMOL, python-pptx
+- **Audio/Video:** MoviePy, Pydub, FFmpeg
 
 ---
 
@@ -111,4 +157,4 @@ python -m new_pipeline --poster_path "paper.pdf" --model_name_t "4o" --model_nam
 - **Mohammed Karim Al-Zoubi**
 - **Osama Shaqqi**
 
-**A submission for the Agenticthon Hackathon.**
+**We are proud to present SPAS as our contribution to a future powered by intelligent, collaborative AI agents.**

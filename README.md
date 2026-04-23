@@ -131,22 +131,17 @@ Transforms a dense research paper into a lively, conversational audio podcast.
 
 ---
 
-## 🚀 Getting Started
+## 🔒 Exclusive Access & Proprietary Rights
 
-### 1. Clone the Suite
-```bash
-git clone https://github.com/YOUR-USERNAME/SPAS.git
-cd SPAS
-```
+> [!IMPORTANT]
+> **SPAS (Scientific Papers Agents Suite)** is a private, proprietary software suite and the exclusive intellectual property of **Mohammed Karim Al-Zoubi** and **Osama Shaqqi**.
 
-### 2. Configure API Keys
-Configure your API keys (OpenAI, Gemini, etc.) in the `config.yml` or `.env` files within each agent's directory.
+This repository is a dedicated submission for the **Agenticthon Hackathon**. Access is strictly limited to authorized judges and evaluators. 
 
-### 3. Run an Agent (Example: Video Agent)
-```bash
-cd Video_Agent
-python run_agent.py --input "paper.pdf"
-```
+*   **Non-Open Source:** This project is **NOT** open-source. All rights are reserved by the authors.
+*   **Usage Restriction:** Unauthorized cloning, copying, distribution, or execution of any part of this suite for any reason (academic, commercial, or personal) is strictly prohibited.
+*   **Intellectual Property:** The orchestration logic, multi-agent communication pipelines, and integrated architectural frameworks represent original work created for this competition.
+*   **No Liability:** Any unauthorized attempt to use or replicate this system will be considered a violation of intellectual property rights.
 
 ---
 

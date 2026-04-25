@@ -83,15 +83,9 @@ Produces dynamic video abstracts by translating academic concepts into animation
 Our Video Agent orchestrates a complex internal economy of specialist sub-agents to ensure high-fidelity results.
 
 <p align="center">
-  <img src="assets/video_agent_planning_logic.png" alt="Video Planning Logic" width="90%">
+  <img src="assets/video_agent_workflow.png" alt="Video Agent Strategic & Multimodal Workflow" width="100%">
   <br>
-  <em><b>Fig 1. Strategic Blueprinting:</b> The agent employs a Progressive Chain-of-Thought (P-CoT) to decompose theoretical text into granular scene instructions.</em>
-</p>
-
-<p align="center">
-  <img src="assets/video_agent_orchestration.png" alt="Video Orchestration" width="90%">
-  <br>
-  <em><b>Fig 2. The Multimodal Assembly Line:</b> A closed-loop system where generators execute rendering code and visual critics provide real-time feedback.</em>
+  <em><b>Autonomous Orchestration:</b> From Strategic Blueprinting (P-CoT) to a Multimodal Assembly Line with real-time visual critics.</em>
 </p>
 
 #### 📺 Live Demo: Autonomous Video Abstract
@@ -115,6 +109,10 @@ Our Video Agent orchestrates a complex internal economy of specialist sub-agents
 
 ### 🎙️ The Podcast Agent: *From Text to Talk Show*
 Transforms a dense research paper into a lively, conversational audio podcast.
+
+<p align="center">
+  <img src="assets/podcast_agent_workflow.png" alt="Podcast Agent Workflow" width="100%">
+</p>
 
 **Internal Workflow:**
 - **Scriptwriting Agent:** Converts jargon into a natural, two-host dialogue script.

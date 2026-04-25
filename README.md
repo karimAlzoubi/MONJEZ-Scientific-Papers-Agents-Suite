@@ -58,6 +58,10 @@ Condenses lengthy papers into visually stunning academic posters, ready for any 
 ### 📊 The Slides Agent: *From Data to Dazzling Slides*
 Transforms documents into polished presentations, ensuring every key insight is captured via its RAG-powered core.
 
+<p align="center">
+  <img src="assets/slides_agent_workflow.png" alt="Slides Agent Workflow" width="100%">
+</p>
+
 **Click on a preview to view the full PDF presentation:**
 
 <div align="center">
@@ -131,7 +135,7 @@ Transforms a dense research paper into a lively, conversational audio podcast.
 
 ## 🔒 Exclusive Access & Proprietary Rights
 
-> [!IMPORTANT]
+>[!IMPORTANT]
 > **MONJEZ (Scientific Papers Agents Suite)** is a private, proprietary software suite and the exclusive intellectual property of **Mohammad Karim Alzoubi** and **Osama Shakaki**.
 
 This repository is a dedicated submission for the **Agentic-thon Hacka-thon**. Access is strictly limited to authorized judges and evaluators. 

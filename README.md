@@ -153,10 +153,10 @@ MONJEZ is a statement about the future of agentic AI. We believe autonomous agen
 ---
 
 ## 🛠️ Built With
-- **Core:** Python 3.10+
-- **LLMs:** GPT-4o, Gemini 2.0, Llama 3.3
-- **Visualization:** Manim, PyMOL, python-pptx
-- **Audio/Video:** MoviePy, Pydub, FFmpeg
+- **Core:** Python 3.14+
+- **LLMs:** GPT-5.5, Gemini 3.1 Pro, Llama 4
+- **Visualization:** Manim v0.20+, PyMOL 3.1+, python-pptx 1.0+
+- **Audio/Video:** MoviePy 2.2+, Pydub 0.25+, FFmpeg 8.1+
 
 ---
 

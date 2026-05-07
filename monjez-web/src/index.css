@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-ink-950 text-white font-arabic;
+    background-image:
+      radial-gradient(1200px 600px at 50% -10%, rgba(45, 212, 191, 0.18), transparent 60%),
+      radial-gradient(800px 400px at 90% 20%, rgba(45, 212, 191, 0.08), transparent 50%),
+      radial-gradient(800px 400px at 10% 60%, rgba(45, 212, 191, 0.05), transparent 50%);
+    background-attachment: fixed;
+  }
+
+  *::selection {
+    @apply bg-mint-500/40 text-white;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-ink-950;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-mint-700/40 rounded-full;
+    border: 2px solid #04101F;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-mint-500/60;
+  }
+}
+
+@layer components {
+  .container-monjez {
+    @apply max-w-7xl mx-auto px-5 sm:px-8 lg:px-10;
+  }
+
+  .glass {
+    @apply bg-white/[0.03] backdrop-blur-xl border border-white/10;
+  }
+
+  .glass-mint {
+    @apply bg-mint-500/[0.06] backdrop-blur-xl border border-mint-500/20;
+  }
+
+  .text-gradient-mint {
+    background: linear-gradient(135deg, #5EEAD4 0%, #2DD4BF 50%, #16A99B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-soft {
+    background: linear-gradient(135deg, #F8FAFC 0%, #94A3B8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .btn-primary {
+    @apply relative inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full
+           bg-gradient-to-br from-mint-400 to-mint-600 text-ink-950 font-bold
+           shadow-mint-glow hover:shadow-mint-glow-lg transition-all duration-300
+           hover:scale-[1.03] active:scale-100 overflow-hidden;
+  }
+
+  .btn-primary::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent
+           translate-x-[-100%] transition-transform duration-700;
+  }
+
+  .btn-primary:hover::before {
+    @apply translate-x-[100%];
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full
+           bg-white/5 text-white border border-white/15 backdrop-blur
+           hover:bg-white/10 hover:border-mint-500/40 transition-all duration-300;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full
+           bg-mint-500/10 border border-mint-500/30 text-mint-300
+           text-xs font-semibold tracking-wide;
+  }
+
+  .section-eyebrow {
+    @apply text-mint-400 text-sm font-semibold tracking-[0.2em] uppercase;
+  }
+
+  .heading-xl {
+    @apply text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight;
+  }
+
+  .heading-lg {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.15] tracking-tight;
+  }
+
+  .heading-md {
+    @apply text-2xl sm:text-3xl font-bold leading-tight tracking-tight;
+  }
+
+  .card-hover {
+    @apply transition-all duration-500 hover:-translate-y-1.5 hover:shadow-mint-glow;
+  }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(45, 212, 191, 0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(45, 212, 191, 0.07) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .noise {
+    position: relative;
+  }
+
+  .noise::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+    opacity: 0.03;
+    mix-blend-mode: overlay;
+  }
+}
+
+@layer utilities {
+  .mask-fade-bottom {
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  }
+  .mask-fade-edges {
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
+
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
